@@ -87,6 +87,7 @@
 
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
           </div>
+          
             <img src="assets/img-HERO 1 mio.jpg" class="img-fluid animated" alt="">
           </div>
         </div>
@@ -713,9 +714,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chefs Section</title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+            #talleres {
+                background: url('assets/img/Fondocursos.jpg') no-repeat center center;
+                background-size: cover;
+                color: white; /* Para asegurar que el texto se vea sobre el fondo */
+            }
+        </style>
     </head>
     <body>
-        <section id="talleres" class="chefs section" id="talleres">
+        <section id="talleres" class="chefs section">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <p><span class="text-white">Perfecciona tu técnica</span></p>
@@ -723,7 +731,7 @@
     
             <div class="container">
                 <div class="row gy-4">
-                    <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" id="salteño">
                         <div class="team-member">
                             <div class="member-img imagen-curso mb-0">
                                 <img src="assets/img/cursos/granSalteño.png" class="img-fluid" alt="">
@@ -776,7 +784,7 @@
       <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
         <div class="team-member px-2">
           <div class="member-img">
-            <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" id="chef-1">
             <div class="social">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -790,7 +798,7 @@
       <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
         <div class="team-member px-2">
           <div class="member-img">
-            <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid">
+            <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" id="chef-2">
             <div class="social" id="social">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -804,7 +812,7 @@
       <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
         <div class="team-member px-2">
           <div class="member-img">
-            <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid">
+            <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" id="chef-3">
             <div class="social" id="redesChefs">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -893,45 +901,63 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Background Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #footer {
+            background: url('assets/img/fondoFooter.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 40px 0;
+            color: white; /* Asegura que el texto sea legible */
+        }
 
-      
-  
-      <div class="row gy-3 d-flex justify-content-evenly align-items-start">
-        <div class="col-lg-3 col-md-6">
-          <img src="/assets/img/LOGO (2).png" alt="logo" id="logoFooter">
-          <div class="social-links d-flex justify-content-around" id="linksRedes"> 
-            <a href="#" class="twitter mx-0"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook mx-0"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram mx-0"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin mx-0"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
+        .address, .navegacion {
+            color: white; /* Asegura que el texto sea legible */
+        }
+    </style>
+</head>
+<body>
+    <footer id="footer">
+        <div class="row gy-3 d-flex justify-content-evenly align-items-start">
+            <div class="col-lg-3 col-md-6">
+                <img src="assets/img/LOGO (2).png" alt="logo" id="logoFooter">
+                <div class="social-links d-flex justify-content-around" id="linksRedes"> 
+                    <a href="#" class="twitter mx-0"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="facebook mx-0"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram mx-0"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin mx-0"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
 
-        <div class="col-lg-3 col-md-6 d-flex" id="address">
-          <div class="address">
-            <h4 class="text-white">Contacto</h4>
-            <p>Tel: 3456-7098</p> 
-            <p>Dirección: Av. Cabildo 5214. CABA, Buenos Aires, Argentina.</p>
-            <p>Mail: saboresargentos@hotmail.com.</p>
-            <p></p>
-          </div>
-  
-        </div>
-  
-        <div class="col-lg-3 col-md-6 d-flex " id="navegacion">
-          <div>
-            <h4 class="text-white">Navegación</h4>
-            <p>Inicio</p>
-            <p>Nosotros</p>
-            <p>Productos</p> 
-            <p>Profesionales</p>  
-            <p>Talleres</p> 
-            </p>
-          </div>
-        </div>
+            <div class="col-lg-3 col-md-6 d-flex" id="address">
+                <div class="address">
+                    <h4 class="text-white">Contacto</h4>
+                    <p>3456-7098</p> 
+                    <p>Av. Cabildo 5214. CABA, Buenos Aires, Argentina.</p>
+                    <p>saboresargentos@hotmail.com.</p>
+                </div>
+            </div>
 
-      </div>
+            <div class="col-lg-3 col-md-6 d-flex" id="navegacion">
+                <div>
+                    <h4 class="text-white">Navegación</h4>
+                    <p>Inicio</p>
+                    <p>Nosotros</p>
+                    <p>Productos</p> 
+                    <p>Profesionales</p>  
+                    <p>Talleres</p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

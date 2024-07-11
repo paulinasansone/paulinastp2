@@ -73,21 +73,43 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+  <main class="main">
 
-      <img src="assets/img/fondoHero.png" alt="" data-aos="fade-in" id="fondoHero">
-
-      <div class="container">
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="courses.html" class="btn-get-started" id>Comprar</a>
-        </div>
-      </div>
-
-    </section>
+     <!-- Section Title -->    
+     <div class="container section-title" data-aos="fade-up">
+      <p><span class="description-title">Taller Gran Gaucho</span></p> 
+      
+      <p>
+        <span id="contentAbout" style="width: 450px; display: block;">
+          Es el curso más completo que tenemos a tu disposición, 
+          seleccionando temas importantes como la historia culinaria
+          Argentina hasta decoración y preparación de los platos 
+          típicos de nuestro país.
+        </span>
+    </p>
     
-    <!-- /Hero Section -->
 
+    <!-- Hero Section -->
+
+    <div class="div-hero">
+      <img src="assets/img/fondoHero.png" class="heroHome" id="fondoHero">
+      <div>
+        <a href="#" class="btn btn-primary" id="moveButton">Comprar</a>
+          <div class="container">
+            <div class="iconos-izquierda">
+              <div class="icono-con-texto">
+                <img src="assets/img/iconos/oRecurso 163@4x.png" alt="Icono 1">
+                <p>100%</p>
+              </div>
+              <div class="icono-con-texto">
+                <img src="assets/img/iconos/oRecurso 164@4x.png" alt="Icono 2">
+                <p>1,5k</p>
+              </div>
+            </div>
+            <p class="precio">$58.000 ARS</p>        
+    
+    
+      
     <!-- Counts Section -->
     <section id="counts" class="section counts">
 
@@ -133,20 +155,20 @@
 
     </section><!-- /Counts Section -->
 
-    <!-- About Section -->
+    <!-- Temario Section -->
+
     <section id="about" class="about section">
-
-      <div class="container" id="containerTemario">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+      <div class="container-fluid" id="containerTemario">
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/temario.png" class="temario" id="temario">
           </div>
-
         </div>
-
       </div>
+    </section>
+    
+    
+
 
     </section><!-- /About Section -->
 
@@ -170,7 +192,7 @@
                 
                       <div class="col-lg-3 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon-box text-center">
-                          <img src="assets/img/iconos/iconoCertificado.png" alt="iconoCertificado" style="width: 100px; height: 100px; margin-bottom: 0px;">
+                          <img src="assets/img/iconos/iconoCertificado.png" alt="iconoCertificado" style="width: 140px; height: 140px; margin-bottom: 20px;">
                           <h4>Certificación oficial</h4>
                           <p>Al terminar el taller, recibirás un certificado válido.</p>
                         </div>
@@ -178,7 +200,7 @@
                 
                       <div class="col-lg-3 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon-box text-center">
-                          <img src="assets/img/iconos/iconoRed.png" alt="iconoRed" style="width: 100px; height: 100px; margin-bottom: 10px;">
+                          <img src="assets/img/iconos/iconoRed.png" alt="iconoRed" style="width: 140px; height: 140px; margin-bottom: 20px;">
                           <h4>Red de profesionales</h4>
                           <p>Accede a una red de profesionales con experiencia.</p>
                         </div>
@@ -186,7 +208,7 @@
                 
                       <div class="col-lg-3 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon-box text-center">
-                          <img src="assets/img/iconos/icono.Instalaciones.png" alt="icono.Instalaciones" style="width: 100px; height: 100px; margin-bottom: 10px;">
+                          <img src="assets/img/iconos/icono.Instalaciones.png" alt="icono.Instalaciones" style="width: 140px; height: 140px; margin-bottom: 20px;">
                           <h4>Acceso a instalaciones</h4>
                           <p>Acceso a las mejores instalaciones y recursos.</p>
                         </div>
@@ -208,43 +230,36 @@
               color: #161616; /* Cambia este color al que desees */
             }
       </style>
+           <style>
+            .align-middle {
+                display: flex;
+                align-items: center;
+            }
+        </style>
+        
+        <div class="container">
+          <div class="row gy-4 align-middle" id="bloqueChef">
+              <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/about.png" class="conoceChef" style="left: -100px;">
+              </div>
+              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
+                  <div class="textoChef" id="textoChef">
+                      <div style="position: relative;">
+                          <img src="assets/img/comillas.png" alt="comillas" id="comillas" style="position: absolute; top: -95px; left: -10px;">
+                      </div>
+                      <p style="font-size: 18px; line-height: 1.3;">
+                          Mi nombre es Matías, llevo unos 35 años en el mundo de la cocina regional, y hoy quiero transmitirte a vos esta pasión por nuestra comida. Te voy a enseñar todas mis técnicas como chef y juntos vamos a pulir las tuyas.
+                      </p>
+                      <p style="font-size: 18px; line-height: 1.3;">¡Espero verte en el curso!</p>
+                      <img src="assets/img/firma negra 1.png" class="firmaNegra" id="firmaNegra">
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
     
       </div><!-- End Section Title -->
-      <style>
-        .align-middle {
-            display: flex;
-            align-items: center;
-        }
-    </style>
-    
-    <div class="container">
-      <div class="row gy-4 align-middle">
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/about.jpg" class="conoceChef">
-          </div>
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
-              <div class="textoChef">
-                  <div style="position: relative;">
-                      <img src="assets/img/comillas.png" alt="comillas" id="comillas" style="position: absolute; top: -90px; left: -10px;">
-                  </div>
-                  <p style="font-size: 18px; line-height: 1.6;">
-                      Mi nombre es Matías, llevo unos 35 años en el mundo de la cocina regional, y hoy quiero transmitirte a vos esta pasión por nuestra comida. Te voy a enseñar todas mis técnicas como chef y juntos vamos a pulir las tuyas.
-                  </p>
-                  <p style="font-size: 18px; line-height: 1.6;">¡Espero verte en el curso!</p>
-                  <img src="assets/img/firma negra 1.png" class="firmaNegra" id="firmaNegra">
-              </div>
-          </div>
-      </div>
-  </div>
   
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
     </section><!-- /About Section -->
 
   
@@ -294,27 +309,18 @@
 
       </div>
 
-          <!-- CURSOS SEGUI APRENDIENDO -->
-<!-- Chefs Section -->
-     
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chefs Section</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <section id="talleres" class="chefs section" id="talleres">
+<!-- CURSOS SEGUI APRENDIENDO -->
+
+    <section class="chefsSection" id="talleres">
+
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <p><span class="text-white">Perfecciona tu técnica</span></p>
+            <p><span class="text-white" id="tituloCursos">Perfecciona tu técnica</span></p>
         </div><!-- End Section Title -->
 
-        <div class="container">
+        <div class="containerFondo" id="containerFondo">
             <div class="row gy-4">
-                <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" id="salteño">
                     <div class="team-member">
                         <div class="member-img imagen-curso mb-0">
                             <img src="assets/img/cursos/granSalteño.png" class="img-fluid" alt="">
@@ -338,84 +344,71 @@
             </div>
         </div>
     </section>
-</body>
-</html>
+
+
           
 
-    </section><!-- /Trainers Index Section -->
+    </section><!-- /Contact Section -->
 
   </main>
 
-  <footer id="footer" class="footer position-relative">
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Background Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #footer {
+            background: url('assets/img/fondoFooter.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 50px 0px 20px 50px;
+            color: white; /* Asegura que el texto sea legible */
+        }
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Mentor</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+        .address, .navegacion {
+            color: white; /* Asegura que el texto sea legible */
+        }
+    </style>
+</head>
+<body>
+    <footer id="footer">
+        <div class="row gy-3 d-flex justify-content-evenly align-items-start">
+            <div class="col-lg-3 col-md-6">
+                <img src="assets/img/LOGO (2).png" alt="logo" id="logoFooter">
+                <div class="social-links d-flex justify-content-around" id="linksRedes"> 
+                    <a href="#" class="twitter mx-0"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="facebook mx-0"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram mx-0"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin mx-0"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex" id="address">
+                <div class="address">
+                    <h4 class="text-white">Contacto</h4>
+                    <p>3456-7098</p> 
+                    <p>Av. Cabildo 5214. CABA, Buenos Aires, Argentina.</p>
+                    <p>saboresargentos@hotmail.com.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex" id="navegacion">
+                <div>
+                    <h4 class="text-white">Navegación</h4>
+                    <p>Inicio</p>
+                    <p>Nosotros</p>
+                    <p>Productos</p> 
+                    <p>Profesionales</p>  
+                    <p>Talleres</p> 
+                </div>
+            </div>
         </div>
+    </footer>
+</body>
+</html>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mentor</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

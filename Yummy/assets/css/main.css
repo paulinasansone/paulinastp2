@@ -801,7 +801,7 @@ section,
 
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
 .heroHome {
   width: 100%;
@@ -815,7 +815,6 @@ section,
   background: var(--accent-color);
   font-weight: 400;
   font-size: 15px;
-  letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 12px 28px;
   border-radius: 50px;
@@ -934,8 +933,8 @@ section,
 
 .btn-get-started {
   position: absolute; /* Posiciona el botón absolutamente dentro del contenedor .div-hero */
-  bottom: 160px; /* Ajusta la distancia desde el fondo de la imagen */
-  left: 10.5%; /* Centra horizontalmente el botón */
+  bottom: 100px; /* Ajusta la distancia desde el fondo de la imagen */
+  left: 11.5%; /* Centra horizontalmente el botón */
   transform: translateX(-50%); /* Ajuste fino para centrar el botón */
   background-color: #ff0000; /* Color de fondo del botón, ajusta según sea necesario */
   color: #ffffff; /* Color del texto del botón, ajusta según sea necesario */
@@ -990,8 +989,9 @@ section,
 
 .fst-italic {
   color: #c10a1c;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.2;
+  font-weight: 400;
 }
 
 .about .content ul {
@@ -1265,7 +1265,7 @@ section,
 
 .btn-primary {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 25px 12px 25px;
   color: #fff;
   background-color: #c10a1c;
   border: none;
@@ -1273,8 +1273,10 @@ section,
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-top: -20px; /* Ajusta este valor según sea necesario */
 }
+
 
 .btn-primary:hover {
   background-color: #990b0b;
@@ -1292,6 +1294,7 @@ section,
 
 .testimonials .testimonial-item .testimonial-content {
   width: 70%;
+  padding-left: 100px;
 }
 
 .testimonials .testimonial-item .testimonial-content img {
@@ -1457,7 +1460,7 @@ section,
 # Chefs Section
 --------------------------------------------------------------*/
 .chefs {
-  background-image: url('C:\Users\pauli\Desktop\pauli\FACULTAD\Cuarto año\Diseño gráfico 3\TP2\plantilla\Home\Yummy\assets\img\Fondocursos.jpg'); 
+  background-image: url('assets\img\Fondocursos.jpg'); 
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -1506,7 +1509,7 @@ section,
 .chefs .team-member .social a {
   transition: color 0.3s;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin: 15px 12px;
+  margin: 8px 12px;
   display: block;
   line-height: 0;
   text-align: center;
@@ -1567,7 +1570,7 @@ section,
 
 .team-member img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .social {
@@ -1672,7 +1675,7 @@ section,
 }
 
 .gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--default-color);
+  background-color: #c10a1c;
   opacity: 1;
 }
 
@@ -1682,15 +1685,13 @@ section,
 
 @media (min-width: 992px) {
   .gallery .swiper-wrapper {
-    padding: 40px 0;
+    padding: 50px 0;
   }
 
   .gallery .swiper-slide-active {
-    background: var(--background-color);
-    border: 6px solid var(--accent-color);
     padding: 4px;
     z-index: 1;
-    transform: scale(1.2);
+    transform: scale(1.8);
     transition: none;
   }
 }
@@ -1718,6 +1719,7 @@ body {
 .newsletterFondo {
   width: 100%;
   padding: 0%;
+  margin-bottom: -5.4%;
 }
 
 /* Estilo para los contenedores internos */
@@ -1863,7 +1865,9 @@ body {
 }
 
 #talleres {
-  background-image: url(/assets/img/Fondocursos.jpg);
+  background-image: url(assets/img/Fondocursos.jpg);
+  background-size: cover;
+  color: white; /* Para asegurar que el texto se vea sobre el fondo */
 }
 
 .imagen-curso {
@@ -1873,7 +1877,6 @@ body {
 
 .team-member a {
   margin: 0;
-  position: relative;
   bottom: 50px;
   z-index: 50;
 }
@@ -1887,6 +1890,7 @@ body {
   margin-bottom: 20px;
   padding: 25px 0px 0px 0px; 
 }
+
 
 #linksRedes {
   padding: 0px 0px 0px 50px; 
@@ -1946,7 +1950,436 @@ align-items: center; /* Opcional: Alinea los elementos en el centro horizontalme
   margin-bottom: -20px
 }
 
+#chef-1  {
+  width: 90%;
+}
 
+#chef-2  {
+  width: 90%;
+}
+
+#chef-3  {
+  width: 90%;
+}
+
+#footer {
+  background: url('assets/img/fondoFooter.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 40px 0;
+  color: white; /* Asegura que el texto sea legible */
+}
+
+.social-links a i {
+    font-size: 1.5em; /* Ajusta este valor según sea necesario */
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;  /* Ajusta el tamaño según sea necesario */
+  height: 3em; /* Ajusta el tamaño según sea necesario */
+  line-height: 2.5em; /* Hace que el ícono esté centrado verticalmente */
+  border: 0.5px solid rgb(201, 201, 201); /* Define el borde fino alrededor del círculo */
+  border-radius: 50%; /* Hace que el borde sea circular */
+  text-align: center; /* Centra el ícono horizontalmente */
+  color: rgb(192, 11, 11); /* Color del ícono */
+  transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+.social-links a:hover {
+  background-color: rgb(201, 201, 201); /* Efecto hover opcional */
+}
+
+.team-member {
+  position: relative; /* Posición relativa para el contenedor */
+}
+
+.member-img {
+  position: relative; /* Posición relativa para la imagen */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Color del overlay, ajusta la opacidad según sea necesario */
+  z-index: 1; /* Asegura que el overlay esté encima de la imagen */
+}
+
+.team-member .btn-primary {
+  position: absolute;
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, 90%); /* Centra exactamente */
+  z-index: 2; /* Asegura que el botón esté encima del overlay */
+}
+
+.hero-text {
+  position: absolute; /* Posiciona el texto de manera absoluta dentro del contenedor */
+  top: 30%; /* Ajusta el valor para mover el texto hacia arriba */
+  left: 40%; /* Alinea el texto horizontalmente al centro */
+  transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+  text-align: center; /* Alinea el texto al centro */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado interno del texto */
+}
+
+#tituloHero {
+font-family: var(--heading-font);
+font-size: 55px;
+font-weight: 700;
+text-align: left;
+width: 60%;
+margin-left: -60px;
+line-height: 1.3;
+margin-top: 100px;
+}
+
+#bajadaHero {
+  font-family: (var(--defoult-font));
+  font-size: 20px;
+  text-align: left;
+  width: 60%;
+  margin-left: -60px;
+  line-height: 1.2;
+  margin-top: 20px;
+  }
+
+  @media (max-width: 774px) {
+    #tituloHero {
+      font-size: 30px;
+      line-height: 1.2;
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 774px) {
+    #bajadaHero {
+      font-size: 12px;
+      line-height: 1.2;
+      margin-bottom: 15%;
+    }
+  }
+
+  @media (max-width: 774px) {
+    #botonHero {
+      position: relative;
+      margin-top: -600%;
+      padding: 2px 18px 4px 18px; 
+      font-size: 12px;
+      margin-left: -15px;
+    }
+
+    #verMás {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 774px) {
+    #heroHome {
+    width: 50%;
+    }
+  }
+
+  @media (max-width: 538px) {
+    #tituloHero {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-top: 80px;
+    }
+  }
+
+  .footerMargen {
+    margin-left: -100%;
+    padding: 0px 0px 0px 0px;
+    }
+
+    @media (max-width: 538px) {
+      #logoFooter{
+        width: 70%;
+        margin-left: 70px;
+        margin-top: -40px;
+      }
+    }
+
+    @media (max-width: 538px) {
+      #tituloHero {
+        font-size: 25px;
+        line-height: 1.2;
+        margin-top: 8px;
+        margin-left: -45px;
+      }
+    }
+
+    @media (max-width: 538px) {
+      #bajadaHero {
+        font-size: 10px;
+        line-height: 1.2;
+        margin-bottom: 8%;
+        margin-top: -10px;
+        margin-left: -45px;
+      }
+    }
+
+    @media (max-width: 538px) {
+      #botonHero {
+     margin-top: 50px;
+     position: relative;
+     padding: 2px 8px 4px 8px; 
+     font-size: 0.2rem;
+     margin-left: -15px;
+     left: 75px;
+      }
+    }
+
+    @media (max-width: 538px) {
+      #about {
+      padding: -0px;
+      margin-top: -70px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #tituloabout {
+      font-size: 27px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #bloqueabout {
+      margin-left: 55px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #bajadaabout {
+      font-size: 25px;
+      }
+    
+    }
+   
+    @media (max-width: 538px) {
+      #contentAbout {
+      font-size: 15px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #about {
+      padding: -0px;
+      margin-top: -30px;
+      }
+    }
+
+    @media (max-width: 774px) {
+      #tituloabout {
+      font-size: 32px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #bloqueabout {
+      margin-left: 58px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #why-us {
+      padding: -70px;
+      margin-top: -70px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #titulo-whyus {
+     font-size: 32px;
+     margin-left: 190px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #why-us {
+      padding: -50px;
+      margin-top: -70px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #titulo-whyus {
+     font-size: 32px;
+     margin-left: 110px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #productostitulos {
+     font-size: 32px;
+     margin-left: 10px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #foto1 {
+       width: 550%;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #botonsalteño {
+      padding: 10px 28px 10px 28px; 
+      font-size: 22px;
+      margin-bottom: 30px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #botongaucho {
+      padding: 10px 28px 10px 28px; 
+      font-size: 22px;
+      margin-bottom: 30px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #botonpanadero {
+      padding: 10px 28px 10px 28px; 
+      font-size: 22px;
+      margin-bottom: 30px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #botonsalteño {
+      padding: 10px 28px 10px 28px; 
+      font-size: 22px;
+      margin-bottom: 30px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #botongaucho {
+      padding: 10px 28px 10px 28px; 
+      font-size: 22px;
+      margin-bottom: 30px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #botonpanadero {
+      padding: 10px 28px 10px 28px; 
+      font-size: 22px;
+      margin-bottom: 30px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #containerchef1 {
+      margin-left: -50px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #containerchef2 {
+      margin-left: 300px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #containerchef3 {
+      margin-left: 30px;
+      }
+    
+
+  
+    }
+
+    @media (max-width: 774px) {
+      #containerchef1 {
+      margin-left: 100px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #containerchef2 {
+      margin-left: 100px;
+      }
+    
+    }
+
+    @media (max-width: 774px) {
+      #containerchef3 {
+      margin-left: 100px;
+      }
+    
+    }
+
+    @media (max-width: 538px) {
+      #logoFooter{
+        width: 200px;
+        margin-left: -10px;
+        margin-top: -40px;
+      }
+    }
+
+    @media (max-width: 538px) {
+      #bloquetel{
+        margin-left: -80px;
+      }
+    }
+
+    @media (max-width: 774px) {
+      #logoFooter{
+        width: 300px;
+      }
+    }
+
+    @media (max-width: 774px) {
+      #linksRedes{
+        padding: 10px 50px 0px 5px;
+      }
+    }
+
+    @media (max-width: 538px) {
+      #linksRedes{
+        padding: 10px 250px 0px 5px;
+      }
+    }
+
+    @media (max-width: 538px) {
+      #address{
+        font-size: 20px;
+      }
+    }
+
+    #footer {
+      background: url('../img/fondoFooter.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 40px 0;
+      color: white; /* Asegura que el texto sea legible */
+    }
 
 /*--------------------------------------------------------------
 # Starter Section Section

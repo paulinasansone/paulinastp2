@@ -747,7 +747,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  padding:40px 0px 30px 0px;
+  padding:100px 0px 30px 0px;
   scroll-margin-top: 900px;
   overflow: clip;
   margin-top: 0%;
@@ -946,10 +946,9 @@ section,
 }
 
 .conoceChef {
-  width: 70%;
-  border-radius: 5%;
-  margin-left: -30px;
-  margin-top: 10%;
+  width: 105%;
+  margin-left: -85px;
+  margin-top: 0%;
 }
 
 /*--------------------------------------------------------------
@@ -2217,7 +2216,7 @@ padding: 50px -15px 0px 0px;
 
 .precio {
   position: relative; /* Permite posicionar de manera relativa */
-  top: -188px; /* Mueve el texto hacia arriba, ajusta según necesites */
+  top: -180px; /* Mueve el texto hacia arriba, ajusta según necesites */
   right: -70px; /* Mueve el texto hacia la derecha, ajusta según necesites */
   font-family: var(--default-font);
   font-size: 17px;
@@ -2684,6 +2683,68 @@ font-weight: 700;
   object-fit: cover; /* Esto asegurará que la imagen cubra todo el contenedor */
 }
 
+#nombreChef {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  }
 
+
+  /*--------------------------------------------------------------
+# Temario
+--------------------------------------------------------------*/
+.faq .faq-container {
+  margin-top: 15px;
+}
+
+.faq .faq-container .faq-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  overflow: hidden;
+  transition: 0.3s;
+  max-width: 500px; /* Ajusta este valor según tus necesidades */
+}
+
+section {
+  background-image: url('ruta/de/tu/imagen.jpg');
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu {
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu input[type="checkbox"] {
+  display: none;
+}
+
+.menu label {
+  display: block;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.menu .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0 10px;
+}
+
+.menu input[type="checkbox"]:checked ~ .content {
+  max-height: 200px; /* Ajusta esto según el contenido */
+  padding: 10px;
+}
 
 

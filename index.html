@@ -48,7 +48,7 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <img src="assets/img/LOGO (2).png" alt="Logo" class="large-image" style="width: 100; height: 100%; position: relative;">
+          <img src="assets/img/LOGO (2).png" alt="Logo" class="large-image" id="logo2" style="width: 100; height: 100%; position: relative;">
         </a>
       </div>
       <style>
@@ -158,7 +158,7 @@
       <div class="container">
           <div class="row gy-4 d-flex justify-content-center">
               <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                  <div class="why-box text-left">
+                  <div class="why-box" id="whybox">
                     <h3 class="move-down" id="titulo-whyus">Sobre nosotros</h3>
                   </div>
               </div><!-- End Why Box -->
@@ -167,7 +167,7 @@
                   <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                       <img src="assets/img/iconos/productos.png" alt="Icono de Productos" class="card-image">
                       <h4>Productos</h4>
-                      <p class="px-3">Productos originales de Argentina, 100% de origen animal y vegetal.</p>
+                      <p class="px-3" id="texto1why"> Productos originales de Argentina, 100% de origen animal y vegetal.</p>
                   </div>
               </div>
   
@@ -175,7 +175,7 @@
                   <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                       <img src="assets/img/iconos/pRecurso 42@4x.png" alt="Icono de Productos" class="card-image">
                       <h4>Envíos</h4>
-                      <p class="px-4">Contamos con envíos a todo el 
+                      <p class="px-4" id="texto2why">Contamos con envíos a todo el 
                         país, en menos de una semana.</p>
                   </div>
               </div>
@@ -184,7 +184,7 @@
                   <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                       <img src="assets/img/iconos/pRecurso 43@4x.png" alt="Icono de Productos" class="card-image">
                       <h4>Profesionales</h4>
-                      <p class="px-2">Aprovecha la ayuda profesional 
+                      <p class="px-2" id="texto3why">Aprovecha la ayuda profesional 
                         que te brindamos para elegir
                          tus insumos.</p>
                   </div>
@@ -525,8 +525,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Premios con nuestros insumos<br></h2>
-        <p><span>Premiados de clientes</p>
+        <h2 id="bajadapremios">Premios con nuestros insumos<br></h2>
+        <p id="titulopremiados"><span>Premiados de clientes</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -584,7 +584,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <p>Nuestros clientes</p>
+        <p id="tituloclientes">Nuestros clientes</p>
       </div><!-- End Section Title -->
 
       <div data-aos="fade-up" data-aos-delay="100">
@@ -614,7 +614,7 @@
                     <div class="testimonial-content" id="container-op-1">
                       <img src="assets/img/comillas.png" alt="comilla doble">
                       <p style="margin-right: -50%;">
-                        <span>Sabores Argentos son de pura confianza, trabajan súper rápido y siempre están atentos a mis preguntas, indudablemente el mejor proveedor de todos.</span class>
+                        <span id="textoop1">Sabores Argentos son de pura confianza, trabajan súper rápido y siempre están atentos a mis preguntas, indudablemente el mejor proveedor de todos.</span class>
                       </p>
                       <h4>Dueño de restaurante</h4>
                       <div class="stars">
@@ -633,10 +633,10 @@
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
                   <div class="col-lg-6">
-                    <div class="testimonial-content">
+                    <div class="testimonial-content" id="container-op-2">
                       <img src="assets/img/comillas.png" alt="comilla doble">
                       <p style="margin-right: -50%;">
-                        <span>Increíble y rápida atención, siempre dispuestos a ayudar y 
+                        <span id="textoop2">Increíble y rápida atención, siempre dispuestos a ayudar y 
                           responder todas mis dudas. Compro desde hace 7 años y 
                           cada día me sorprende más la calidad de productos.</span>
                       </p>
@@ -647,7 +647,7 @@
                     </div>
                   </div>
                   <div class="col-lg-2 text-center testimonial-image">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="" id="foto2">
                   </div>
                 </div>
               </div>
@@ -657,10 +657,10 @@
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
                   <div class="col-lg-6">
-                    <div class="testimonial-content">
+                    <div class="testimonial-content" id="container-op-3">
                       <img src="assets/img/comillas.png" alt="comilla doble">
                       <p style="margin-right: -50%;">
-                        <span>Soy cliente hace 5 años y nunca tuve ningún problema. 
+                        <span id="textoop3">Soy cliente hace 5 años y nunca tuve ningún problema. 
                           Son absolutamente de confianza y siempre son muy amables.
                           Excelente calidad y servicio. </span>
                       </p>
@@ -671,7 +671,7 @@
                     </div>
                   </div>
                   <div class="col-lg-2 text-center testimonial-image">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="" id="foto3">
                   </div>
                 </div>
               </div>
@@ -681,10 +681,10 @@
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
                   <div class="col-lg-6">
-                    <div class="testimonial-content">
+                    <div class="testimonial-content"id="container-op-4">
                       <img src="assets/img/comillas.png" alt="comilla doble">
                       <p style="margin-right: -50%;">
-                        <span>Sus productos son de excelente calidad y muy frescos, 
+                        <span id="textoop4">Sus productos son de excelente calidad y muy frescos, 
                           los platos quedan riquísimos utilizando sus insumos. De los
                           mejores proveedores del mercado.</span>
                       </p>
@@ -695,7 +695,7 @@
                     </div>
                   </div>
                   <div class="col-lg-2 text-center testimonial-image">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" id="foto4">
                   </div>
                 </div>
               </div>
@@ -730,7 +730,7 @@
         <section id="talleres" class="chefs section">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <p><span class="text-white">Perfecciona tu técnica</span></p>
+                <p><span class="text-white" id="titulocursos">Perfecciona tu técnica</span></p>
             </div><!-- End Section Title -->
     
             <div class="container">
@@ -738,7 +738,7 @@
                     <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" id="salteño">
                         <div class="team-member">
                             <div class="member-img imagen-curso mb-0">
-                                <img src="assets/img/cursos/granSalteño.png" class="img-fluid" alt="">
+                                <img src="assets/img/cursos/granSalteño.png" class="img-fluid" alt="" id="cursosalteño">
                             </div>
                             <a href="#" class="btn btn-primary" id="botonsalteño">Ver más</a>
                             <div class="social">
@@ -760,7 +760,7 @@
                     <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member">
                             <div class="member-img imagen-curso mb-0">
-                                <img src="assets/img/cursos/granPanadero.png" class="img-fluid" alt="">
+                                <img src="assets/img/cursos/granPanadero.png" class="img-fluid" alt="" id="cursopanadero">
                             </div>
                             <a href="#" class="btn btn-primary" id="botonpanadero">Ver más</a>
                             <div class="social">
@@ -780,7 +780,7 @@
 <section id="chefs" class="chefs section">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <p><span>Nuestros profesionales</span></p>
+    <p id="tituloprofesionales"><span>Nuestros profesionales</span></p>
   </div><!-- End Section Title -->
 
   <div class="container">
@@ -844,7 +844,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <p class="text-white"><span>Contáctanos</p>
+        <p class="text-white" id="titulocontacto"><span>Contáctanos</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -855,8 +855,8 @@
             <div class="info-item d-flex align-items-center justify-content-center background-contact" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/iconos/iconoMail.png" alt="Icono de mail" style="width: 100px; height: 100px; margin-bottom: 10px;">
               <div>
-                <h3>Correo electrónico</h3>
-                <p>somosargento@hotmail.com</p>
+                <h3  id="titulocorreo">Correo electrónico</h3>
+                <p  id="mail">somosargento@hotmail.com</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -918,7 +918,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 d-flex" id="address">
-            <div class="address">
+            <div class="address" id="address">
                 <h4 class="text-white">Contacto</h4>
                 <p>3456-7098</p> 
                 <p>Av. Cabildo 5214. CABA, Buenos Aires, Argentina.</p>

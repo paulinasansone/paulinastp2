@@ -291,7 +291,7 @@ h6 {
 
   .header .navmenu {
     order: 3;
-    background-color: #ce1212;
+
   }
 }
 
@@ -452,7 +452,7 @@ h6 {
 
   .navmenu ul {
     display: none;
-    position: absolute;
+    position: relative;
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
@@ -2380,6 +2380,348 @@ margin-top: 100px;
       padding: 40px 0;
       color: white; /* Asegura que el texto sea legible */
     }
+
+    @media (max-width: 390px) {
+      #logo2{
+
+      }
+    }
+
+    @media (max-width: 390px) {
+      #tituloHero {
+        font-size: 17px;
+        line-height: 1.2;
+        margin-top: 20px;
+        margin-left: -25px;
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .heroHome {
+      width: 150%; 
+      right: 100px;     
+      top: 0px;
+    }
+    }
+
+    @media (max-width: 390px) {
+      #bajadaHero {
+      margin-left: -25px;
+      font-size: 10px;
+      width: 80%;
+    }
+    }
+
+    @media (max-width: 390px) {
+      #botonHero {
+     margin-top: 30px;
+     position: relative;
+     padding: 2px 8px 4px 8px; 
+     font-size: 0.2rem;
+     margin-left: -15px;
+     left: 75px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #tituloabout {
+        font-size: 21px;
+        margin-top: 0px;
+      }
+    }
+
+    
+    @media (max-width: 390px) {
+      #bajadaabout {
+        font-size: 19px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #contentAbout {
+        font-size: 17px;
+        line-height: 1.1;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #titulo-whyus {
+        font-size: 21px;
+        margin-top: 20px;
+        margin-left: 110px;
+        padding: 0px 0px 0px 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #whybox {
+        padding: 40px 0px 0px 0px;
+        height : 80%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #texto1why {
+      width: 50%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #texto2why {
+      width: 60%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #texto3why {
+      width: 45%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #productostitulos {
+        font-size: 21px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #titulopremiados {
+        font-size: 21px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #bajadapremios {
+        font-size: 8px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #container-op-1 {
+        padding: 0px 30px 0px 100px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #textoop1 {
+        font-size: 12px;
+        line-height: 0.5;
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #foto1 {
+        max-width: 270%;
+        max-height: auto;
+        margin-left: -80px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #textoop2 {
+        font-size: 12px;
+        line-height: 0.5;
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #foto2 {
+        max-width: 270%;
+        max-height: auto;
+        margin-left: -80px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #textoop3 {
+        font-size: 12px;
+        line-height: 0.5;
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #foto3 {
+        max-width: 270%;
+        max-height: auto;
+        margin-left: -80px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #textoop4 {
+        font-size: 12px;
+        line-height: 0.5;
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #foto4 {
+        max-width: 270%;
+        max-height: auto;
+        margin-left: -80px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #container-op-2 {
+        padding: 0px 30px 0px 100px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #container-op-3 {
+        padding: 0px 30px 0px 100px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #container-op-4 {
+        padding: 0px 30px 0px 100px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #tituloclientes {
+        font-size: 21px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #titulocursos {
+        font-size: 21px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #cursosalteño {
+        max-width: 80%;
+        max-height: auto;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #grangaucho {
+        max-width: 80%;
+        max-height: auto;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #cursopanadero {
+        max-width: 80%;
+        max-height: auto;
+      }
+    }
+    
+    @media (max-width: 390px) {
+      #botonsalteño {
+      padding: 9px 20px 9px 18px;
+      font-size: 17px;
+      margin-bottom: -5px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #botongaucho {
+      padding: 9px 20px 9px 18px;
+      font-size: 17px;
+      margin-bottom: -5px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #botonpanadero {
+      padding: 9px 20px 9px 18px;
+      font-size: 17px;
+      margin-bottom: -5px;
+      }
+    }
+    
+    @media (max-width: 390px) {
+      #tituloprofesionales {
+        font-size: 21px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #chef-1 {
+        max-width: 60%;
+        max-height: auto;
+        margin-left: -130px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #chef-2 {
+        max-width: 60%;
+        max-height: auto;
+        margin-left: -130px;
+      }
+    }
+    
+    @media (max-width: 390px) {
+      #chef-3 {
+        max-width: 60%;
+        max-height: auto;
+        margin-left: -130px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #titulocontacto {
+        font-size: 21px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #titulocorreo {
+        font-size: 16px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #mail {
+        font-size: 14px;
+        margin-top: 0px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #logoFooter {
+        max-width: 80%;
+        max-height: auto;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 390px) {
+      #linksRedes {
+      padding: 0px 50px 0px 50px;
+    }
+
+    @media (max-width: 390px) {
+      #address {
+      font-size: 16px;
+      padding: 25px 0px 20px 40px;
+      height: -20px;
+    }
+
+
+
+
 
 /*--------------------------------------------------------------
 # Starter Section Section

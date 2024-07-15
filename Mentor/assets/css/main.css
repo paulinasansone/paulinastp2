@@ -2047,8 +2047,8 @@ section,
   }
 
   #comillas  {
-    width: 17%;
-    position: absolute;
+  
+
  
   }
 
@@ -2058,7 +2058,7 @@ section,
   }
 
   #why-us {
-    margin-top: -235px;   /* Ajusta el valor según tus necesidades */
+
     margin-bottom: 0px; /* Ajusta el valor según tus necesidades */
 }
 
@@ -3432,7 +3432,10 @@ margin-top: -135px;
   font-size: 14px;
   padding: 25px 0px 20px 40px;
   height: -20px;
+  }
 }
+
+
 
 
 

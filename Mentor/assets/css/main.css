@@ -1888,9 +1888,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -2046,11 +2043,7 @@ section,
     font-family: var(--heading-font);
   }
 
-  #comillas  {
-  
 
- 
-  }
 
   #firmaNegra {
     width: 20%;
@@ -2105,12 +2098,11 @@ width: 70%;
   }
 
   .TercerBloque{
-    background-image: url('../img/fondoTemario.png');
+    background-image: url('../img/fondoTemarionuevo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; /* Ajusta la altura para cubrir toda la pantalla */
-    color: white; /* Color de texto blanco para contraste */
     text-align: center; /* Alineación del texto al centro */
   }
 
@@ -2798,7 +2790,6 @@ section {
 .TercerBloque {
   width: 100%;
   padding: 20px;
-  background-color: #f9f9f9;
 }
 
 .ContenedorTercerBloqueLista {
@@ -3434,9 +3425,3 @@ margin-top: -135px;
   height: -20px;
   }
 }
-
-
-
-
-
-

@@ -291,7 +291,6 @@ h6 {
 
   .header .navmenu {
     order: 3;
-    background-color: #ce1212;
   }
 }
 
@@ -303,7 +302,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1200) {
   .navmenu {
     padding: 0;
   }
@@ -448,7 +447,7 @@ h6 {
   .div-hero button {
     padding-left: 50%;
     border-radius: 50px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 30%; /* Ajusta el valor de left según sea necesario para mover el botón */
     transform: translate(-50%, -50%);
@@ -1502,6 +1501,7 @@ section,
   .tabs .nav-link {
     border: 0;
     padding: 15px;
+    
   }
 
   .tabs .nav-link.active {
@@ -2040,8 +2040,7 @@ section,
   }
 
   #tituloChef {
-    margin-bottom: 50%;
-    left: 400px;
+    margin-bottom: -16px;
     font-size: 34px;
     font-weight: 700;
     font-family: var(--heading-font);
@@ -2050,16 +2049,16 @@ section,
   #comillas  {
     width: 17%;
     position: absolute;
-    top: 50%
+ 
   }
 
   #firmaNegra {
-    width: 25%;
-    margin-top: 5%;
+    width: 20%;
+
   }
 
   #why-us {
-    margin-top: -35px;   /* Ajusta el valor según tus necesidades */
+    margin-top: -235px;   /* Ajusta el valor según tus necesidades */
     margin-bottom: 0px; /* Ajusta el valor según tus necesidades */
 }
 
@@ -2095,18 +2094,38 @@ width: 70%;
   margin-left: -11%;
    }
 
-   #talleres {
-    background-image: url('assets/img/Fondocursos.jpg');
+ 
+  .ContenedorTercerBloqueLista{
+    margin-top: 2em;
+  }
+  
+  #sectionTemario{
+    margin-top: 2em;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .TercerBloque{
+    background-image: url('../img/fondoTemario.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; /* Ajusta la altura para cubrir toda la pantalla */
     color: white; /* Color de texto blanco para contraste */
     text-align: center; /* Alineación del texto al centro */
-}
+  }
+
+  .ContenedorSeptimoBloque .chefsSection {
+    background-image: url('../img/Fondocursos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ajusta la altura para cubrir toda la pantalla */
+    color: white; /* Color de texto blanco para contraste */
+    text-align: center; /* Alineación del texto al centro */
+  }
 
 #footer {
-  background: url('assets/img/fondoFooter.jpg') no-repeat center center;
+  background: url('../img/fondoFooter.jpg') no-repeat center center;
   background-size: cover;
   padding: 40px 0;
   color: white; /* Asegura que el texto sea legible */
@@ -2166,9 +2185,8 @@ padding: 50px -15px 0px 0px;
 }
 
 .description-title {
-  position: relative; /* Para poder ajustar la posición con top y left */
-  top: 40px; /* Ajusta este valor para mover el título hacia abajo */
-  left: -60px; /* Ajusta este valor para mover el título hacia la izquierda */
+   top: 40px; /* Ajusta este valor para mover el título hacia abajo */
+  left: -10px; /* Ajusta este valor para mover el título hacia la izquierda */
   font-size: 52px; /* Cambia este valor para ajustar el tamaño de la tipografía */
   font-family: var(--heading-font);
   font-weight: 700;
@@ -2217,7 +2235,7 @@ padding: 50px -15px 0px 0px;
 .precio {
   position: relative; /* Permite posicionar de manera relativa */
   top: -180px; /* Mueve el texto hacia arriba, ajusta según necesites */
-  right: -70px; /* Mueve el texto hacia la derecha, ajusta según necesites */
+  right: -90px; /* Mueve el texto hacia la derecha, ajusta según necesites */
   font-family: var(--default-font);
   font-size: 17px;
   font-weight: 400;
@@ -2289,13 +2307,21 @@ font-weight: 700;
   margin: 0 auto; /* Centrado horizontal */
 }
 
+
+.QuintoBloque{
+  margin: 70px;
+  margin-left: 100px;
+}
+
 #textoChef {
-margin-left: -20%;
+font-size: 20px;
+line-height: 1.2;
 }
 
 #tituloCursos {
 font-family: var(--heading-font);
 font-weight: 700;
+margin-left: 70px;
 }
 
 .chefsSection {
@@ -2368,7 +2394,6 @@ font-weight: 700;
 
   .header .navmenu {
     order: 3;
-    background-color: #ce1212;
   }
 }
 
@@ -2529,7 +2554,7 @@ font-weight: 700;
 
   .navmenu ul {
     display: none;
-    position: absolute;
+    position: relative;
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
@@ -2715,36 +2740,700 @@ section {
 }
 
 .menu {
+  margin-top: 30px;
   flex: 1 1 calc(50% - 20px);
   margin: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu input[type="checkbox"] {
   display: none;
+  
+}
+
+.menu label {
+
+  margin-top: 30px;
+  display: block;
+  margin-top: 2em;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+
+.menu input[type="checkbox"]:checked ~ .content {
+  margin-top: 30px;
+  max-height: 200px; /* Ajusta esto según el contenido */
+  padding: 10px;
+  
+}
+
+.ContenedorPrimerBloqueIconos{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+
+#moveButton {
+  margin-right: 20px; /* Ajusta el espacio entre los elementos */
+}
+.precio {
+  font-size: 18px;
+  color: #333;
+}
+
+#tituloHero {
+  margin-top: 120px;
+  margin-left: -52px;
+  margin-bottom: -50px;
+}
+
+.TercerBloque {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.ContenedorTercerBloqueLista {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuColumn {
+  display: flex;
+  flex-direction: column;
+  width: 48%; /* Ajusta el ancho según sea necesario */
+}
+
+.menu {
+  border-radius: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* Ajusta la altura según sea necesario */
+  text-align: center;
+}
+
+.menu input[type="checkbox"] {
+  display: none; /* Oculta el checkbox */
 }
 
 .menu label {
   display: block;
-  padding: 10px;
-  background-color: #3498db;
-  color: white;
   cursor: pointer;
+  font-size: 20px;
+  width: 90%;
+  font-family: var(--heading-font);
+  font-weight: 700;
 }
 
-.menu .content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  padding: 0 10px;
+@media (max-width: 768px) {
+  .ContenedorTercerBloqueLista {
+    flex-direction: column;
+  }
+
+  .menuColumn {
+    width: 100%;
+  }
 }
 
-.menu input[type="checkbox"]:checked ~ .content {
-  max-height: 200px; /* Ajusta esto según el contenido */
-  padding: 10px;
+.tituloCentrado {
+  text-align: center;
+  margin-bottom: 20px; /* Ajusta el margen según sea necesario */
 }
+
+#sectionTemario{
+  margin-top: -2em;
+  padding: 0px 0px 0px 0px;
+}
+
+#containerFondo {
+  margin-top: -200px; /* Ajusta la cantidad de desplazamiento hacia arriba según sea necesario */
+}
+
+.section-title {
+  margin-top: 50px;
+}
+
+.section-title {
+  margin-top: -60px; /* Ajusta el margen superior negativo según sea necesario para subir el texto */
+  left: -40px;
+}
+
+.containerFondo {
+  padding-top: 100px;
+}
+
+#aprendiendosalteño {
+  margin-left: 100px;
+ }
+
+ #botónPanadero {
+  position: absolute; /* Permite un posicionamiento absoluto dentro del contenedor relativo */
+  bottom: 80px; /* Ajusta la distancia desde la parte inferior */
+  right: 325px; /* Ajusta la distancia desde la derecha */
+  z-index: 1; /* Asegura que el botón esté por encima de la imagen */
+}
+
+#botónPanadero {
+  position: absolute; /* Permite un posicionamiento absoluto dentro del contenedor relativo */
+  bottom: 80px; /* Ajusta la distancia desde la parte inferior */
+  right: 320px; /* Ajusta la distancia desde la derecha */
+  z-index: 1; /* Asegura que el botón esté por encima de la imagen */
+}
+
+#botónSalteño {
+  position: absolute; /* Permite un posicionamiento absoluto dentro del contenedor relativo */
+  bottom: 70px; /* Ajusta la distancia desde la parte inferior */
+  right: 925px; /* Ajusta la distancia desde la derecha */
+  z-index: 1; /* Asegura que el botón esté por encima de la imagen */
+}
+
+/* Estilos para el botón */
+#botónPanadero {
+  background-color: #c10a1c; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave de estilos */
+  border-radius: 1.8rem;
+}
+
+/* Estilos para el botón al pasar el mouse */
+#botónPanadero:hover {
+  background-color: #910815; /* Color de fondo al pasar el mouse */
+  color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+/* Estilos para el botón */
+#botónSalteño {
+  background-color: #c10a1c; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave de estilos */
+  border-radius: 1.8rem;
+}
+
+/* Estilos para el botón al pasar el mouse */
+#botónSalteño:hover {
+  background-color: #910815; /* Color de fondo al pasar el mouse */
+  color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+#primerbloque {
+  margin-left: 160px;
+}
+
+.menu {
+  margin-bottom: -10px; /* Ajusta este valor según tus necesidades */
+}
+
+/* Opcional: Elimina el margen inferior del último elemento */
+.menu:last-child {
+  margin-bottom: 0;
+}
+
+#textochef {
+  font-size: 18px;
+}
+ 
+@media (max-width: 390px) {
+  #titulogaucho {
+    font-size: 23px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 390px) {
+  #titulogaucho {
+    font-size: 22px;
+    max-width: 70%;
+    margin-left: -52px;
+    margin-bottom: -50%;
+  }
+}
+
+
+@media (max-width: 390px) {
+  #contentAbout {
+    font-size: 12px;
+    margin-top: -40px;
+    max-width: 55%;
+    margin-left: -60px;
+  }
+}
+
+@media (max-width: 390px) {
+  #fondoHero {
+    margin-left: -275px;
+    margin-top: -210px;
+  }
+}
+
+@media (max-width: 390px) {
+  #logo2 {
+   width: 70%; 
+  }
+}
+
+@media (max-width: 390px) {
+  #navmenu {
+   margin-right: 130px; 
+  }
+}
+
+@media (max-width: 390px) {
+  .description-title {
+   margin-top: 15%;
+  }
+}
+
+@media (max-width: 390px) {
+  #preciohero {
+   margin-left: -130px;
+   font-size: 20px;
+   margin-top: 265px;
+  }
+}
+
+@media (max-width: 390px) {
+  #moveButton {
+   margin-left: -75px;
+   padding: 5px 10px 5px 10px;
+   font-size: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  .iconos-izquierda {
+   margin-left: -75px;
+   margin-top: -20px;
+}
+}
+
+@media (max-width: 390px) {
+  #iconomg {
+   max-width: 25%;
+   margin-left: 22px;
+}
+}
+
+@media (max-width: 390px) {
+  #iconocom {
+   max-width: 25%;
+}
+}
+
+@media (max-width: 390px) {
+  #mg {
+   font-size: 10px;
+}
+}
+
+@media (max-width: 390px) {
+  #com {
+    font-size: 10px;
+}
+}
+
+@media (max-width: 390px) {
+  .SegundoBloque {
+   margin-top: -100px;
+  }
+}
+
+@media (max-width: 390px) {
+  .iconoUbicacion {
+   max-width: 35%;
+   margin-left: -20px;
+  }
+}
+
+@media (max-width: 390px) {
+  #modalidad {
+   font-size: 10px;
+   width: 50%;
+  }
+}
+
+@media (max-width: 390px) {
+  #containermod {
+   margin-left: 10px;
+   margin-top: -30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .iconoClases {
+   max-width: 35%;
+   margin-left: -20px;
+  }
+}
+
+@media (max-width: 390px) {
+  #clases {
+   font-size: 10px;
+   width: 20%;
+  }
+}
+
+@media (max-width: 390px) {
+  #containerclases {
+   margin-left: -30px;
+   margin-top: -40px;
+  }
+}
+
+@media (max-width: 390px) {
+  .iconoNivel {
+   max-width: 35%;
+   margin-left: -20px;
+  }
+}
+
+@media (max-width: 390px) {
+  #nivel {
+   font-size: 10px;
+   width: 20%;
+  }
+}
+
+@media (max-width: 390px) {
+  #containernivel {
+   margin-left: 10px;
+   margin-top: -40px;
+  }
+}
+
+@media (max-width: 390px) {
+  .iconoProfesional {
+   max-width: 35%;
+   margin-left: -20px;
+  }
+}
+
+@media (max-width: 390px) {
+  #prof {
+   font-size: 10px;
+   width: 20%;
+  }
+}
+
+@media (max-width: 390px) {
+  #containerprof {
+   margin-left: 10px;
+   margin-top: -40px;
+  }
+}
+
+@media (max-width: 390px) {
+  .TercerBloque {
+    width: 100%;
+    padding: 0;
+  }
+
+  .ContenedorTercerBloqueLista {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #sectionTemario {
+    width: 100%;
+  }
+
+  .menu {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .menu label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+  }
+}
+
+@media (max-width: 390px) {
+  #titulobenef {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 390px) {
+  #certificado {
+    width: 5px;
+    height: auto;
+    margin-left: -140px;
+    margin-bottom: -70px;
+  }
+}
+
+@media (max-width: 390px) {
+  #certfof {
+    margin-left: 0px;
+    width: 50%;
+    }
+}
+
+@media (max-width: 390px) {
+  #textcert {
+    margin-left: -10px;
+    width: 60%;
+    }
+}
+
+@media (max-width: 390px) {
+  #containercertif {
+    margin-top: -40px;
+    }
+}
+
+@media (max-width: 390px) {
+  #iconored {
+    width: 5px;
+    height: auto;
+    margin-left: -140px;
+    margin-bottom: -70px;
+  }
+}
+
+@media (max-width: 390px) {
+  #textred {
+    margin-left: 0px;
+    width: 50%;
+    }
+}
+
+@media (max-width: 390px) {
+  #titulored {
+    margin-left: -10px;
+    width: 60%;
+    }
+}
+
+@media (max-width: 390px) {
+  #containerred {
+    margin-top: -100px;
+    }
+}
+
+@media (max-width: 390px) {
+  #iconoins {
+    width: 5px;
+    height: auto;
+    margin-left: -140px;
+    margin-bottom: -70px;
+  }
+}
+
+@media (max-width: 390px) {
+  #textoins {
+    margin-left: 0px;
+    width: 50%;
+    }
+}
+
+@media (max-width: 390px) {
+  #tituloins {
+    margin-left: -10px;
+    width: 60%;
+    }
+}
+
+@media (max-width: 390px) {
+  #containerins {
+    margin-top: -40px;
+    }
+}
+
+@media (max-width: 390px) {
+  #tituloChef {
+    margin-left: -160px;
+    font-size: 22px;
+    }
+}
+
+@media (max-width: 390px) {
+  #comillas {
+    margin-top: -120px;
+    margin-left: -70px;
+    }
+}
+
+@media (max-width: 390px) {
+  #textochef {
+    margin-left: -70px;
+    font-size: 13px;
+    width: 90%;
+    margin-top: 50px;
+    }
+}
+
+@media (max-width: 390px) {
+  #espero {
+    margin-left: -70px;
+    width: 90%;
+    font-size: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+  #nombreChef {
+    margin-left: -70px;
+    width: 90%;
+    margin-top: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+  #firmaNegra {
+    margin-left: -70px;
+    width: 90%;
+    max-width: 80px;
+    }
+}
+
+@media (max-width: 390px) {
+  #opinionCursoTitulo {
+    font-size: 22px;
+    margin-left: 25px;
+    width: 50%;
+    height: 1.1;
+    margin-top: -95px;
+    }
+}
+
+@media (max-width: 390px) {
+  #member1 {
+margin-left: -130px;
+max-width: 50%;
+margin-top: -40px;
+    }
+}
+
+@media (max-width: 390px) {
+  #member2 {
+margin-left: -130px;
+max-width: 50%;
+margin-top: -40px;
+    }
+}
+
+@media (max-width: 390px) {
+  #member3 {
+margin-left: -130px;
+max-width: 50%;
+margin-top: -40px;
+    }
+}
+
+@media (max-width: 390px) {
+  #primerotexto {
+margin-left: -5px;
+font-size: 12px;
+width: 60%;
+line-height: 1.2;
+    }
+}
+
+@media (max-width: 390px) {
+  #segundotexto {
+margin-left: -5px;
+font-size: 12px;
+width: 60%;
+line-height: 1.2;
+    }
+}
+
+@media (max-width: 390px) {
+  #tercertexto {
+margin-left: -5px;
+font-size: 12px;
+width: 60%;
+line-height: 1.2;
+    }
+}
+
+@media (max-width: 390px) {
+  #tituloCursos {
+margin-left: -55px;
+font-size: 22px;
+    }
+}
+
+@media (max-width: 390px) {
+  #aprendiendosalteño {
+margin-left: -135px;
+    }
+}
+
+@media (max-width: 390px) {
+  #aprendiendopanadero {
+margin-left: -135px;
+margin-top: -135px;
+    }
+}
+
+@media (max-width: 390px) {
+  #botónPanadero {
+  padding: 10px 10px 10px 10px;
+  font-size: 12px;
+  margin-right: -80px;
+  margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+  #logoFooter {
+    max-width: 60%;
+    max-height: auto;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+@media (max-width: 390px) {
+  #linksRedes {
+  padding: 0px 60px 0px 50px;
+  width: 90%;
+  margin-left: -40px;
+}
+
+@media (max-width: 390px) {
+  #address {
+  font-size: 14px;
+  padding: 25px 0px 20px 40px;
+  height: -20px;
+  width: 50%;
+  margin-left: -190px;
+}
+
+@media (max-width: 390px) {
+  #navegacion {
+  font-size: 14px;
+  padding: 25px 0px 20px 40px;
+  height: -20px;
+}
+
+
 
 
